@@ -47,3 +47,19 @@ console.log( a );       // 2
 foo();                      // ReferenceError
 
 
+//for loops no longer have counter variables leaking into the outer scope
+
+for(var i = 0; i <= 10; i++){
+  console.log(i);
+}
+
+console.log(i) // 11
+
+//vs
+
+for(let i = 0; i <= 10; i++){
+  console.log(i);
+}
+
+console.log(i) //reference error: i is not defined
+
