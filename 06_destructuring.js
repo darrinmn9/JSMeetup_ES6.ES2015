@@ -77,7 +77,7 @@ arr[1] = tmp;
 //a better way to swap variables
 var x = 10, y = 20;
 [ y, x ] = [ x, y ];
-console.log( x, y );
+console.log( x, y ); // 20 10
 
 
 //____________________________________________________________________
