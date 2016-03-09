@@ -10,19 +10,23 @@ function bar() {
   };
 }
 
-var tmp = bar(),
-  x = tmp.x,
-  y = tmp.y,
-  z = tmp.z;
+var tmp = bar();
+
+var x = tmp.x;
+var y = tmp.y;
+var z = tmp.z;
 
 console.log(x, y, z); // 4 5 6
+
+
+//____________________________________________________________________
+//ES6 destructuring - (mapping collections to variables)
+
 
 function foo(){
   return [1, 2, 3];
 }
-//____________________________________________________________________
 
-//ES6 destructuring
 var [ a, b, c ] = foo();
 var { x: x, y: y, z: z } = bar();
 
@@ -36,13 +40,25 @@ var { x, y, z } = bar();
 console.log( x, y, z ); // 4 5 6
 
 
-
 //just to make it clear that we are mapping these to variables, not an object
 var { x: bam, y: baz, z: bap } = bar();
 
 console.log( bam, baz, bap );       // 4 5 6
 console.log( x, y, z );             // ReferenceError
 
+//____________________________________________________________________
+
+//we can even use destructuring to map values to object properties
+//NOTE the subtle difference, we dont use "var" in our destructuring expression
+
+
+var obj = {};
+
+console.log(obj) // {}
+
+[ obj.a, obj.b, obj.c ] = foo();
+
+console.log(obj) // {a: 1, b: 2, c: 3}
 
 
 //____________________________________________________________________
