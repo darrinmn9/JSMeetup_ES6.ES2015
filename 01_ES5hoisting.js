@@ -1,3 +1,5 @@
+// ********* ES5 Hoisting ***********
+
 var myFunc = function() {
   return x;
 };
@@ -56,20 +58,3 @@ function myFunc() {
   return x;
 }
 
-
-
-
-
-var foo = function() {
-  console.log('foo');
-}
-
-console.log(x); //'x'
-foo(); //'foo'
-bar(); //'bar'
-
-var x = 5;
-
-function bar() {
-  console.log('bar');
-}
