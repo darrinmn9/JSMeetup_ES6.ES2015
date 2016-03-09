@@ -28,8 +28,7 @@ console.log( b );
 //rest: gather all of the remaining passed arguments into z
 function foo(x, y, ...z) {
 
-
-    console.log( x, y, z );
+  console.log( x, y, z );
 }
 
 foo( 1, 2, 3, 4, 5 );
