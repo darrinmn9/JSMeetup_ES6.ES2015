@@ -18,9 +18,9 @@ for (var key in collection) {
 //____________________________________________________________________
 
 
-//ES6 For of loop
-for (var val of collection) {
-  console.log(val);
+//ES5 Equivalent
+for (var key in collection) {
+  console.log(collection[key]);
 }
 
 // 1 2 3
@@ -29,9 +29,12 @@ for (var val of collection) {
 //____________________________________________________________________
 
 
-//ES5 Equivalent
-for (var key in collection) {
-  console.log(collection[key]);
+//ES6 For of loop
+for (var val of collection) {
+  console.log(val);
 }
 
 // 1 2 3
+
+
+
