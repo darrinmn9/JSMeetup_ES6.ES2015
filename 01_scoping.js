@@ -1,4 +1,4 @@
-// ********* SCOPING (let) ***********
+// ********* BLOCK SCOPING & let ***********
 
 
 // "var" always declares variables attached to the enclosing function
