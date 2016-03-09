@@ -15,7 +15,7 @@ var factorial = num => {
 
   return answer;
 
-}
+};
 
 
 //____________________________________________________________________
@@ -34,7 +34,7 @@ var factorial = num => {
   else {
     return (num * factorial(num - 1));
   }
-}
+};
 
 
 
@@ -44,7 +44,7 @@ var factorial = num => {
 
 
 
-//tail call optimization
+//recursive + ES6 tail call optimization: http://www.2ality.com/2015/06/tail-call-optimization.html
 
 var factorial = (n, acc = 1) => {
   if (n <= 1) {
@@ -52,8 +52,8 @@ var factorial = (n, acc = 1) => {
   } else {
     return factorial(n - 1, n * acc);
   }
-}
+};
 
 // Stack overflow in most implementations today,
 // but safe on arbitrary inputs in ES6
-factorial(100000)
+factorial(100000);
