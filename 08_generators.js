@@ -22,7 +22,7 @@ function *foo() {
     }
 }
 
-Calling it.next() will act as a random number generator
+//Calling it.next() will act as a random number generator
 
 var x, y, z;
 
@@ -43,5 +43,3 @@ it.next('baz');              // { value: undefined, done: true } z gets the valu
 
 console.log(x, y, z)  // 'foo' 'bar' 'baz'
 
-
-//WHY WOULD THIS BE VALUABLE
