@@ -5,7 +5,7 @@ function foo(x,y) {
     return x + y;
 }
 
-// versus
+// vs
 
 var foo = (x,y) => x + y;   //notice there is no explict return
 
